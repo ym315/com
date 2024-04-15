@@ -96,6 +96,10 @@ button {
   margin-bottom: 20px !important;
 }
 
+.ma20tb {
+  margin: 20px 0;
+}
+
 .w80 {
   width: 80px !important;
 }
@@ -133,7 +137,7 @@ button {
 }
 
 .point {
-  color: #E50012;
+  color: #E4404D;
   font-weight: bold;
 }
 
@@ -316,8 +320,12 @@ header {
   border-bottom: 1px solid #ccc;
   height: 60px;
 }
+.head > h1 {
+  line-height: 30px;
+}
 .head > h1 img {
   max-width: 140px;
+  vertical-align: middle;
 }
 .head ul {
   margin-left: 10px;
@@ -333,10 +341,10 @@ header {
 }
 .head ul .logout {
   text-decoration: underline;
-  text-decoration-color: #E50012;
+  text-decoration-color: #E4404D;
 }
 .head ul .logout a {
-  color: #E50012;
+  color: #E4404D;
 }
 
 main {
@@ -349,7 +357,6 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 1920px;
 }
 
 .login {
@@ -580,9 +587,9 @@ footer {
 }
 
 .counpon_search, .coupon_info {
-  width: 650px;
+  width: 500px;
   margin: 0;
-  padding: 50px;
+  padding: 20px;
   background: #fff;
   border: 1px solid #ccc;
 }
@@ -621,9 +628,9 @@ footer {
   border-radius: 10px;
 }
 .coupon_keypad .number, .coupon_keypad .sign {
-  width: 32%;
-  margin-bottom: 2%;
-  height: 100px;
+  width: 31%;
+  margin-bottom: 3%;
+  height: 70px;
   cursor: pointer;
 }
 .coupon_keypad .number {
@@ -660,7 +667,7 @@ footer {
   background-position: 0px -27px;
 }
 .coupon_keypad .sign i.delete {
-  background-position: -35px -28px;
+  background-position: -71px -28px;
 }
 
 .coupon_info {
@@ -685,10 +692,10 @@ footer {
 }
 .coupon_info .coupon_detail > img {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 .coupon_info .coupon_detail > ul {
-  width: 450px;
+  width: 90%;
   margin: 15px auto;
   padding: 0;
 }
@@ -711,17 +718,51 @@ footer {
   word-break: keep-all;
 }
 
+.coupon_info2 {
+  display: none;
+  width: 1000px;
+}
+.coupon_info2 .btn_2set {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .coupon_info2 .btn_2set .btn {
   width: 49%;
 }
 
-.coupon_cancle {
+.testdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: -moz-flex;
+  display: -o-flex;
+  -webkit-flex-wrap: wrap;
+}
+.testdiv > div {
+  width: 48%;
+}
+
+.coupon_use_detail {
   width: 100%;
+  height: 610px;
+  position: relative;
+  padding: 10px;
+}
+
+.coupon_cancle {
+  width: 100% !important;
   border: 1px solid #ccc;
   padding: 15px;
   overflow: auto;
+  margin-top: 30px;
 }
 .coupon_cancle > table {
+  width: 100%;
   overflow-x: scroll;
   border: 1px solid #ccc;
   text-align: center;
@@ -856,19 +897,19 @@ footer {
   background: #3A9092;
 }
 .thchart li:nth-of-type(1) div.circle i {
-  background-position: -72px -27px;
+  background-position: -151px -27px;
 }
 .thchart li:nth-of-type(3) div.circle {
   background: #863A92;
 }
 .thchart li:nth-of-type(3) div.circle i {
-  background-position: -111px -27px;
+  background-position: -192px -27px;
 }
 .thchart li:nth-of-type(5) div.circle {
   background: #924A3A;
 }
 .thchart li:nth-of-type(5) div.circle i {
-  background-position: -152px -27px;
+  background-position: -234px -27px;
 }
 .thchart li:nth-of-type(7) div.circle {
   background: #3A6D92;
@@ -937,6 +978,7 @@ footer {
   position: fixed;
   left: 0;
   top: 0;
+  display: none;
 }
 
 .popup {
@@ -1004,7 +1046,7 @@ footer {
 }
 .popup .popup_content > p {
   width: 100%;
-  word-break: break-all;
+  word-break: keep-all;
   margin: 10% 0 10% 0;
 }
 .popup .success .popup_icon {
@@ -1021,6 +1063,10 @@ footer {
 }
 .popup .failed button {
   background: #E4404D;
+}
+.popup .failed .failed_msg {
+  color: #E4404D;
+  font-weight: bold;
 }
 
 .popup_test {
